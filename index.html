@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="player">
+    <div class="playerbox">
+      <div class="play">
+        <img src="img/back.png" id="pre" onclick="prev()" alt="" />
+        <img src="img/play.png" id="play" onclick="playOrPauseSong()" alt="" />
+        <img src="img/next.png" id="next" onclick="next()" alt="" />
+      </div>
+      <div class="bgc" onclick="bodyBGC()"></div>
+      <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+        <div class="seek-bar">
+          <div class="handle">
+            <div id="songTitle"></div>
+            <div id="currentTime">00:00 / 00:00</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
